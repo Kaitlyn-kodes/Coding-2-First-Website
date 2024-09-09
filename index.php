@@ -7,24 +7,14 @@
 </head>
 <body>
 
-  
+<form method="GET">
+    <input type= "text" name= "person">
+    <button> SUBMIT </button>
+</form>
+
     <?php
-        
-
-        //String
-        $name='I love school!';
-
-        //Integer
-        $name = 20;
-
-       //Float
-       $nmae = 29.2130;
-
-     
-
-       //Array
-       $names = array("Kaitlyn","Marshal"," Beau");
-       echo $names['2'];
+        $name= $_GET ['person'];
+        echo $name. " is awesome sauce!"
     ?>
 
 </body>
