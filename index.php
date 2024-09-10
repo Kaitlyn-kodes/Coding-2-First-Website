@@ -7,14 +7,17 @@
 </head>
 <body>
 
+//This is a "sumbit form";
 <form method="GET">
     <input type= "text" name= "person">
     <button> SUBMIT </button>
 </form>
 
     <?php
+    
         $name= $_GET ['person'];
-        echo $name. " is awesome sauce!"
+        echo $name. " is awesome sauce!";
+
     ?>
 
 </body>
