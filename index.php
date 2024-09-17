@@ -1,5 +1,5 @@
 <?php
-    include 'header.php'
+    include 'includes/header.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -19,7 +19,7 @@
 
     <?php
     
-        $name= $_GET ['person'];
+        $name = $_GET ['person'];
         echo $name. " is awesome sauce!";
 
     ?>
