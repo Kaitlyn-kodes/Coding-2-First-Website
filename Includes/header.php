@@ -1,4 +1,6 @@
-
+<?php
+  session_start();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -47,13 +49,29 @@
             <li class="nav-item">
             <a class="nav-link" href="operators.php">Operators</a>
             </li>
-            
+            <li class="nav-item">
+            <a class="nav-link" href="superglobals.php">Super Globals</a>
+            </li>
         </ul>
         </div>
     </div>
     </nav>
 
     </header>
+
+    <?php
+
+    $_SESSION['username'] = "Kaitlyn29 ";
+    echo $_SESSION['username'];
+//this means that if the session is in php and on the header code, then the $_SESSION "isset".
+    if(!isset($_SESSION['username'])){
+
+      echo " You need to log in first!";
+    } else {
+      echo "You are logged in!";
+    }
+ echo "<br>";
+    ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
